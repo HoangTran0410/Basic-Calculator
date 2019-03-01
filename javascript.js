@@ -9,6 +9,16 @@ window.onload = function() {
 					screen.value = '0';
 					break;
 
+				case 'DEL' :
+					if(screen.value.length) {
+						if(screen.value.length == 1) {
+							screen.value = '0';
+						} else {
+							screen.value = screen.value.slice(0, -1);
+						}
+					}
+					break;
+
 				case '=' :
 					var str = screen.value;
 					str = str.replaceAll('×', '*');

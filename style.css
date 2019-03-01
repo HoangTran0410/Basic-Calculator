@@ -71,12 +71,22 @@ button:active {
     background-color: #f17377;
 }
 
+.delete-sign {
+	background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+}
+
+.delete-clear:hover {
+    background-color: #f17377;
+}
+
 .equal-sign {
     background-color: #2e86c0;
     border-color: #337cac;
     color: #fff;
     height: 100%;
-    grid-area: 2 / 4 / 6 / 5;
+    grid-area: 2 / 4 / 5 / 4;
 }
 
 .equal-sign:hover {
