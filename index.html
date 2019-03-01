@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
 </head>
@@ -15,30 +16,41 @@
         <input type="text" class="calculator-screen" id="screen" value="0" />
         <div class="calculator-keys">
 
-            <button type="button" class="operator" value="+">&plus;</button>
-            <button type="button" class="operator" value="-">&minus;</button>
-            <button type="button" class="operator" value="*">&times;</button>
-            <button type="button" class="operator" value="/">&divide;</button>
-            
+        	<button title="Logarit" class="function" value="log(">Log</button>
+        	<button title="Logarit of e" class="function" value="ln(">Ln</button>
+        	<button title="Square Root - Căn bậc 2" class="function" value="&radic;(">&radic;</button>
+        	<button title="Open my facebook"><i class="fab fa-facebook"></i></button>
+        	<button title="Open my github"><i class="fab fa-github"></i></button>
 
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
-            <button type="button" class="all-clear" value="all-clear">AC</button>
-            
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
-            <button type="button" class="delete-sign" value="delete-sign">DEL</button>
-            
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
+        	<button title="Sin (in radian)" class="function" value="sin(">Sin</button>
+        	<button title="Cos (in radian)" class="function" value="cos(">Cos</button>
+        	<button title="Tan (in radian)" class="function" value="tan(">Tan</button>
+        	<button title="Open bracket" class="operator" value="(">(</button>
+        	<button title="Close bracket" class="operator" value=")">)</button>
 
-            <button type="button" value="0">0</button>
-            <button type="button" class="decimal" value=".">.</button>
-            <button type="button" class="ans-sign" value="Ans">Ans</button>
-            <button type="button" class="equal-sign" value="=">=</button>
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button title="Delete" class="delete-sign">DEL</button>
+            <button title="Clear" class="all-clear">AC</button>
+            
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button class="operator" value="&times;">&times;</button>
+            <button class="operator" value="&divide;">&divide;</button>
+            
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button class="operator" value="&plus;">&plus;</button>
+            <button class="operator" value="&minus;">&minus;</button>
+
+            <button value="0">0</button>
+            <button class="decimal" value=".">.</button>
+            <button title="Exponential" class="exp constant" value="E">exp</button>
+            <button title="Last ANSwer" class="ans-sign" value="Ans">Ans</button>
+            <button title="Calculate" class="equal-sign">=</button>
 
         </div>
     </div>
