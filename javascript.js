@@ -23,6 +23,8 @@ window.onload = function() {
 
 				case '=' :
 					var str = screen.value;
+					str = str.replaceAll('+', '+');
+					str = str.replaceAll('−', '-');
 					str = str.replaceAll('×', '*');
 					str = str.replaceAll('÷', '/');
 					str = str.replaceAll('Ans', ans);

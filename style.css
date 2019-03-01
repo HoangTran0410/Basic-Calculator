@@ -58,6 +58,8 @@ button:active {
 }
 
 .operator {
+	font-size: 27px;
+	font-weight: bold;
     color: #337cac;
 }
 
@@ -90,7 +92,7 @@ button:active {
     border-color: #337cac;
     color: #fff;
     height: 100%;
-    /*grid-area: 5 / 3 / 5 / 5;*/
+    grid-area: 4 / 4 / 6 / 4;
 }
 
 .equal-sign:hover {
