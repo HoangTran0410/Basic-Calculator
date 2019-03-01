@@ -1,3 +1,5 @@
+var ans = 1;
+
 window.onload = function() {
 	document.onclick = function(e) {
 		if(e.target.matches('button')) {
@@ -23,9 +25,15 @@ window.onload = function() {
 					var str = screen.value;
 					str = str.replaceAll('×', '*');
 					str = str.replaceAll('÷', '/');
+					str = str.replaceAll('Ans', ans);
 
 					console.log(str);
-					screen.value = eval(str);
+					if(eval(str)) {
+						screen.value = eval(str);
+						ans = screen.value;
+					} else {
+						alert('Lỗi định dạng');
+					}
 					break;
 
 				default: 
