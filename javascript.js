@@ -52,7 +52,6 @@ window.onload = function() {
                         screen.value = e.target.value;
                     } else {
                         screen.value = screen.value.splice(screen.selectionStart || screen.value.length, 0, e.target.value);
-                        screen.focus();
                         // screen.value += e.target.value;	
                     }
             }
