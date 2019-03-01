@@ -30,12 +30,14 @@ window.onload = function() {
 					str = str.replaceAll('Ans', ans);
 
 					console.log(str);
-					if(eval(str)) {
+
+					try {
 						screen.value = eval(str);
 						ans = screen.value;
-					} else {
-						alert('Lỗi định dạng');
+					} catch(err) {
+						screen.value = 'ERROR';
 					}
+					
 					break;
 
 				default: 
