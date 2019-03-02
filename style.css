@@ -21,11 +21,11 @@ html {
     border-radius: 5px;
     margin: auto;
     width: 460px;
-    box-shadow: 8px 12px #0005;
+    box-shadow: 9px 8px #0002;
 }
 
 .calculator-screen {
-	font-size: 4rem;
+	font-size: 5rem;
     width: 100%;
     height: 80px;
     border: none;
@@ -44,10 +44,9 @@ button {
     background-color: #fff;
     border-radius: 3px;
     border: 1px solid #c4c4c4;
-    /*background-color: transparent;*/
     font-size: 2rem;
     color: #333;
-    box-shadow: 3px 3px #0005;
+    box-shadow: 4px 3px #0002;
     transition-duration: .1s;
     text-shadow: 0 1px rgba(255, 255, 255, .4);
 }
@@ -59,7 +58,6 @@ button:hover {
 button:active {
 	transition-duration: 0s;
 	box-shadow: none;
-	/*background-image: linear-gradient(to top, transparent, transparent 50%, rgba(0, 0, 0, .08));*/
 }
 
 .operator {
@@ -68,7 +66,6 @@ button:active {
     color: #337cac;
 }
 .function {
-	/*font-size: 27px;*/
 	font-style: italic;
     color: #339cac;
 }
@@ -105,8 +102,6 @@ button:active {
     background-color: #2e86c0;
     border-color: #337cac;
     color: #fff;
-    height: 100%;
-    /*grid-area: 4 / 4 / 6 / 4;*/
 }
 
 .equal-sign:hover {
@@ -118,7 +113,6 @@ button:active {
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
     padding: 15px;
-    /*background: #eee;*/
 }
 
 .hiddenSmall {

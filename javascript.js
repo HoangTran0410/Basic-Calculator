@@ -8,16 +8,12 @@ window.onload = function() {
 
             switch (innerHTMLButton) {
                 case 'AC':
-                    screen.value = '0';
+                    screen.value = '';
                     break;
 
                 case 'DEL':
                     if (screen.value.length) {
-                        if (screen.value.length == 1) {
-                            screen.value = '0';
-                        } else {
-                            screen.value = screen.value.slice(0, -1);
-                        }
+                        screen.value = screen.value.slice(0, -1);
                     }
                     break;
 
@@ -34,13 +30,13 @@ window.onload = function() {
                     str = str.replaceAll('ln', 'Math.log');
                     str = str.replaceAll('√', 'Math.sqrt');
                     
-                    str = str.replaceAll('Ans', ans);
+                    str = str.replaceAll('Ans', 'ans');
 
                     console.log(str);
 
                     try {
                         screen.value = eval(str);
-                        ans = screen.value;
+                        ans = Number(screen.value);
                     } catch (err) {
                         screen.value = 'ERROR';
                     }
@@ -48,12 +44,7 @@ window.onload = function() {
                     break;
 
                 default:
-                    if (screen.value == '0') {
-                        screen.value = e.target.value;
-                    } else {
-                        screen.value = screen.value.splice(screen.selectionStart || screen.value.length, 0, e.target.value);
-                        // screen.value += e.target.value;	
-                    }
+                    screen.value = screen.value.splice(screen.selectionStart || screen.value.length, 0, e.target.value);
             }
         }
     }
